@@ -49,6 +49,10 @@
         if (files == undefined) {
             alert("Kindly upload a file!")
         }
+        if (startValue > endValue) {
+            alert("Invalid page numbers")
+            window.location.href = window.location.href
+        }
         if (startValue == undefined || endValue == undefined) {
             alert("Kindly fill in the input values!")
         }
@@ -87,7 +91,7 @@
     </div>
     <div class="file-input">
         <input type="file" id="file" class="file" accept="application/pdf" bind:this={fileInput}>
-        <label for="file">Select fil</label>
+        <label for="file">Select file</label>
         <input id="start" type="number" name="startPage" placeholder="Start" bind:this={startInput}>
         <input id="end" type="number" name="endPage" placeholder="End" bind:this={endInput}>
     </div>
