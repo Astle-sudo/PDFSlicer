@@ -82,7 +82,7 @@
 
 <header>
     <h1>
-        Pdf S<span>/</span>icer
+        PDF S<span>/</span>icer
     </h1>
 </header>
 <main>
